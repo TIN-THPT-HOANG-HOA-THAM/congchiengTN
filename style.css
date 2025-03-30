@@ -1,0 +1,199 @@
+
+/* ================== Thiết lập chung ================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif;
+    color: #333; /* Màu chữ thống nhất */
+}
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+}
+
+/* ================== Căn lề chung ================== */
+.container, .banner, .search-bar, nav, footer {
+    width: 80%; /* Lùi nội dung vào tránh sát màn hình */
+    margin: auto;
+    padding: 20px;
+    background-color: #d4caca;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ /* Căn lề đều hai bên */
+}
+
+/* ================== Phần Banner ================== */
+.banner {
+    background: url("https://hutc.org/uploads/Resource/van-hoa-cong-chieng-tay-nguyen2.jpg") no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    padding: 10rem 0;
+    text-align: center;
+    color: white;
+}
+
+/* ================== Tiêu đề (h1) ================== */
+h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+/* ================== Phần Header và Menu ================== */
+header {
+    background-color: #45a049;
+    padding: 2.5rem 0;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav {
+    background: #ece5e5;
+    display: flex;
+    justify-content: center;
+    padding: 12px 0;
+    border-radius: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 12px 18px;
+    font-size: 17px;
+    transition: 0.3s;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    color: #f1c40f;
+}
+
+/* ================== Thanh tìm kiếm ================== */
+.search-bar {
+    margin: 20px;
+    text-align: center;
+}
+
+.search-bar input {
+    padding: 12px;
+    font-size: 16px;
+    width: 320px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 12px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-bar button:hover {
+    background-color: #45a049;
+}
+
+/* ================== Phần Footer ================== */
+footer {
+    background: #222;
+    color: white;
+    padding: 50px 20px;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.footer-section {
+    width: 30%;
+    padding: 15px;
+    text-align: center;
+}
+
+h4 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #f1c40f;
+}
+
+p, a {
+    font-size: 16px;
+    text-decoration: none;
+}
+
+p {
+    margin-bottom: 12px;
+}
+
+/* Căn chỉnh icon và chữ */
+.contact-icon {
+    display: inline-block;
+    margin: 8px 12px;
+    transition: 0.3s;
+}
+
+.contact-icon img {
+    width: 36px;
+    height: 36px;
+    vertical-align: middle;
+}
+
+.contact-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Danh sách nhóm học sinh */
+.student-list {
+    list-style: none;
+    padding: 0;
+}
+
+.student-list li {
+    margin: 8px 0;
+}
+
+.student-list a {
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.student-list a:hover {
+    color: #f1c40f;
+    text-decoration: underline;
+}
+
+/* ================== Responsive cho màn hình nhỏ ================== */
+@media (max-width: 768px) {
+    .container, .banner, .search-bar, nav, footer {
+        width: 95%;
+    }
+
+    .footer-section {
+        width: 100%;
+        padding: 12px;
+    }
+    
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    nav a {
+        display: block;
+        padding: 10px;
+    }
+    
+    .search-bar input {
+        width: 90%;
+    }
+}
